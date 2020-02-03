@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* CSS Document */
+{ box-sizing: border-box }
+body{
+  background-color: lightgray;  
+}
+header{
+    padding: 30px;
+    background-color:white;
+}
+header img{
+    float:left; 
+}
+header h1{
+    text-align: center;
+    font-family: Verdana, Helvetica;
+    letter-spacing: 4px;
+    font-size: 70px;
+    color: darkslategrey;
+}
+header:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+nav{
+    background: teal;
+    overflow: hidden;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li{
+    float:left;
+    text-align: center;
+    border-right: 1px solid #fff;   
+}
+nav li a{
+    color:white;
+    font-family: arial black;
+    display: block;
+    font-weight: bold;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+nav li a:visited{
+	color:white;
+}
+nav li a:hover{
+    background-color: teal;
+    color: #F49B49;
+    transition: .2s;
+}
+nav h3 a{
+	color:black;
+	text-decoration: none;
+}
+div h3 a:visited{
+	color:black;
+}
+div h3 a:hover{
+    background-color: teal;
+    color: #F49B49;
+    transition: .2s;
+}
+div p a{
+	color:black;
+}
+div p a:visited{
+	color:black;
+}
+div p a:hover{
+    background-color: teal;
+    color: #F49B49;
+    transition: .2s;
+}
+div.boxhead{
+    background-color: #98B5B4;
+    filter: alpha(opacity=60);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    font-family: Verdana, Helvetica;
+    list-style: square;
+}
+div li a{
+	color:black;
+	text-decoration: none;
+}
+div li a:visited{
+	color:black;
+}
+div li a:hover{
+    background-color: teal;
+    color: #F49B49;
+    transition: .2s;
+}
+div ul li{
+	list-style: circle;
+}
+div h2{
+	text-align: left;
+}
+div h3{
+	text-align: center;
+}
+div h4{
+	text-align: center;
+}
+div h5{
+	text-align: Center;
+	font-size: 32px;}
+div.box{
+    background-color: white;
+    opacity: 0.;
+    filter: alpha(opacity=60);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    font-family: Verdana, Helvetica;
+}
+div.boxTest{
+    background-color: white;
+    opacity: 0.;
+    filter: alpha(opacity=60);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    font-family: Verdana, Helvetica;
+    overflow:hidden;
+}
+div.boxTest img{
+    float:left;
+    padding: 7px;
+}
+input {
+width: 30px;
+margin-left: 20px;
+}
+button {
+width: 100px;
+height: 30px;
+margin-top: 20px;
+}
+.slider {
+	text-align: center;
+	width: 250px;
+	margin: 10px auto;
+}
+@media screen and (max-width: 775px){
+	.box{
+		width: 100%;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 775px){
+	nav li{
+		float: none;
+		border-bottom: 1px solid #fff;
+		border-right: none;
+	}
+}

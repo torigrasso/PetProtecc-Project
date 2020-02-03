@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pet Protecc Quiz</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="webLogo.png" alt="Pet Protecc" width="182" height="168">
+        <h1>Pet Protecc</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="why_adopt.html" title="Benefits">Benefits of Adoption</a></li>
+            <li><a href="statistics.html" title="Statistics">Statistics</a></li>
+            <li><a href="quiz.html" title="Are you ready?">Quiz</a></li>
+            <li><a href="adopt-now.html" title="Adopt Now">Adopt Now</a></li>
+            <li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>
+        </ul>
+    </nav>
+    <div class="boxhead">       
+        <h2>Are You Ready to Adopt?</h2>
+        <h3>Take this quiz to find out if you are ready for all the challenges that come with adopting a forever friend</h3>
+    </div>
+    <div class="box">
+        <form id="form1" onsubmit="return submitAnswers()">
+<p>1.On average, how much does it cost to care for an animal a year?</p>
+<ul>
+<li list-style="none"><label for="one_string"><input type="radio" name="one" value="0" id="one_string" />Nothing they are free</label></li>
+<li list-style="none"><label for="one_join"><input type="radio" name="one" value="0" id="one_join" />$100-$400</label></li>
+<li list-style="none"><label for="one_info"><input type="radio" name="one" value="10" id="one_info" />$700-$1500</label></li>
+</ul>
+<p>2.Does your current living arrangement approve of pets?</p>
+<ul>
+<li list-style="none"><label for="two_string"><input type="radio" name="two" value="10" id="two_string"/>Yes</label></li>
+<li list-style="none"><label for="two_join"><input type="radio" name="two" value="0" id="two_join"/>No</label></li>
+</ul>
+<p>3.How many hours of exercise do most dogs need a day?</p>
+<ul>
+<li list-style="none"><label for="three_string"><input type="radio" name="three" value="0" id="three_string" />12 hours</label></li>
+<li list-style="none"><label for="three_join"><input type="radio" name="three" value="0" id="three_join" />All of the hours. Can't stop, won't stop</label></li>
+<li list-style="none"><label for="three_info"><input type="radio" name="three" value="10" id="three_info" />30 min - 2 hours</label></li>
+</ul>
+
+<p>4.Would you be willing to provide for an animal that needs medical attention regardless of the price?</p>
+<ul>
+<li list-style="none"><label for="four_string"><input type="radio" name="four" value="10" id="four_string" />Of course</label></li>
+<li list-style="none"><label for="four_join"><input type="radio" name="four" value="0" id="four_join" />No</label></li>
+</ul> 			
+<p>5.Do you or a member of your household have allergies/mind shedding?</p>
+<ul>		
+<li list-style="none"><label for="five_string"><input type="radio" name="five" value="0" id="five_string" />Yes</label></li>
+<li list-style="none"><label for="five_join"><input type="radio" name="five" value="10" id="five_join" />No</label></li>
+</ul>  			
+<p>6.How many walks per week would you find to be able to give your pet?</p>
+<ul>
+<li list-style="none"><label for="six_string"><input type="radio" name="six" value="0" id="six_string" />Two</label></li>
+<li list-style="none"><label for="six_join"><input type="radio" name="six" value="10" id="six_join" />I would make an effort to do it atleast once or twice a day</label></li>
+<li list-style="none"><label for="six_info"><input type="radio" name="six" value="0" id="six_info" />Four</label></li>
+</ul>		
+<p>7.How many hours are you willing to dedicate to training your new companion?</p>
+<ul>
+<li list-style="none"><label for="seven_string"><input type="radio" name="seven" value="0" id="seven_string" />2 hours total</label></li>
+<li list-style="none"><label for="seven_join"><input type="radio" name="seven" value="10" id="seven_join" />As many hours as it takes</label></li>
+<li list-style="none"><label for="seven_info"><input type="radio" name="seven" value="0" id="seven_info" />Eh. They will learn on their own</label></li>
+</ul>  		
+<p>8.Are you ready to patient with them as they adjust to their new surroundings and loving home?</p>
+<ul>
+<li list-style="none"><label for="eight_string"><input type="radio" name="eight" value="0" id="eight_string" />Heck No</label></li>
+<li list-style="none"><label for="eight_join"><input type="radio" name="eight" value="10" id="eight_join" />Yes, they need support as they are adjusting and learning</label></li>
+</ul> 			
+<p>9.Are you prepared to pay for boarding when you travel?</p>  
+<ul>
+<li list-style="none"><label for="nine_string"><input type="radio" name="nine" value="0" id="nine_string" />Yes</label></li>
+<li list-style="none"><label for="nine_join"><input type="radio" name="nine" value="0" id="nine_join" />No</label></li>
+</ul>			
+<p>10.How much love does an animal deserve?</p>
+<ul>
+<li list-style="none"><label for="ten_string"><input type="radio" name="ten" value="0" id="ten_string" />So much love</label></li>
+<li list-style="none"><label for="ten_join"><input type="radio" name="ten" value="0" id="ten_join" />Eh a little love</label></li>
+<li list-style="none"><label for="ten_info"><input type="radio" name="ten" value="10" id="ten_info" />All of the love</label></li>
+</ul>
+<p><button type="submit" value="Submit">Submit</button></p>          
+</form>
+<p>Your score is: <span id="grade">__</span> %</p>
+<p id="grade2"></p>     
+</div>
+</body>
+<script>
+function submitAnswers() {  
+    var one = parseInt(document.forms['form1']['one'].value);
+	var two = parseInt(document.forms['form1']['two'].value);
+    var three = parseInt(document.forms['form1']['three'].value);
+    var four = parseInt(document.forms['form1']['four'].value);
+    var five = parseInt(document.forms['form1']['five'].value);
+    var six = parseInt(document.forms['form1']['six'].value);
+    var seven = parseInt(document.forms['form1']['seven'].value);
+    var eight = parseInt(document.forms['form1']['eight'].value);
+    var nine = parseInt(document.forms['form1']['nine'].value);
+    var ten = parseInt(document.forms['form1']['ten'].value);
+    var result = one + two + three + four + five + six + seven + eight + nine + ten;
+    var grade = document.getElementById('grade');
+	grade.innerHTML = result;
+    return false; // required to not refresh the page
+}
+</script>	
+</html>

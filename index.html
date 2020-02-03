@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pet Protecc Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/lity@2.3.0/dist/lity.min.css">
+<!--Slick Styles-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Lity Javascript-->
+</head>
+<body>
+    <header>
+        <img src="webLogo.png" alt="Pet Protecc" width="182" height="168">
+        <h1>Pet Protecc</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="why_adopt.html" title="Benefits">Benefits of Adoption</a></li>
+            <li><a href="statistics.html" title="Statisitics">Statistics</a></li>
+            <li><a href="quiz.html" title="Are you ready?">Quiz</a></li>
+            <li><a href="adopt-now.html" title="Adopt Now">Adopt Now</a></li>
+            <li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>
+        </ul>
+    </nav>
+    <div class="boxhead">     
+    <h2>Mission Statement</h2>
+    <p> Here at Pet Protecc, our mission is to help as many animals as we can to find the right homes. They deserve a place where they will be loved and cared for to the fullest extent.</p>
+    </div>
+	<div class="box">
+		<h3><a href="testimonials.html" title="Testimonials">See Their Stories</a></h3>
+	<div class="slider">
+		<div><img src="hayley.jpeg" alt="Hayley" width="250" height="300"></div>
+		<div><img src="sarah.JPG" alt="Sarah+CJ" width="250" height="300"></div>
+		<div><img src="Marley.jpeg" alt="Marley" width="250" height="300"></div>
+		<div><img src="caroline.jpeg" alt="Caroline" width="250" height="300"></div>
+		<div><img src="erinArthur.PNG" alt="Erin+Arthur" width="250" height="300"></div>
+        <div><img src="erinBoo.jpg" alt="Erin+Boo" width="250" height="300"></div>	
+	</div>
+	</div>
+	<div class="box">
+	<h4>These Animals Deserve a Second Chance</h4>
+		<p>Of the 3 million cats and dogs euthanized in shelters each year, approximately 2.4 million (80%) are healthy and treatable and could have been adopted into new homes. One of the top ten reasons pets are surrendered is for behavior. What's more is that according to a study done in 2018, up to 96% of all dogs turned in had not recived behavior training.
+		<br>You could be the opportunity that these hopeful animals have been waiting for. <a href="adopt-now.html">Go find your new loving companion now</a>. If you're not quite sure yet, take our quiz <a href="quiz.html">here</a>.
+		</br>
+		</p>
+	</div>
+<!--Lity Javascript-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lity@2.3.0/dist/lity.min.js"></script>
+<!--Slick Javascript-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+$('.slider').slick({
+dots: true,
+ autoplay: true,
+ autoplaySpeed: 3000,
+ infinite: true,
+ speed: 500,
+ fade: true,
+ cssEase: 'linear'
+});
+});
+</script>
+    </body>
+</html> 
+    
